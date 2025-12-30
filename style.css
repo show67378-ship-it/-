@@ -31,7 +31,7 @@ body {
 .shop-name {
   margin: 0;
   font-family: "Yomogi", cursive;
-  font-size: 64px;
+  font-size: 52px;
   color: #fff;
   white-space: nowrap;
   letter-spacing: 0.1em;
@@ -196,6 +196,7 @@ text-align: center;
     font-size: 2.2rem;
   }
 }
+
 
 
 
