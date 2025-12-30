@@ -1,0 +1,192 @@
+:root {
+  --offwhite: #f9f7f3;
+  --greige: #f1efea;
+  --navy: #1f2a44;
+  --green: #2f5d3a;
+}
+
+/* 全体 */
+body {
+  margin: 0;
+  font-family: "Shippori Mincho B1", serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: var(--offwhite);
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: var(--navy);
+  padding: 28px 16px;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.shop-name {
+  margin: 0;
+  font-family: "Yomogi", cursive;
+  font-size: 64px;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.catchcopy {
+  color: #e6e6e6;
+  font-size: 20px;
+}
+
+/* 外観 */
+.hero {
+  background: #f9f7f3;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: #f9f7f3;
+}
+
+/* セクション */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 16px;
+  background-color: var(--offwhite);
+}
+
+.section.alt {
+  background-color: var(--greige);
+}
+
+h2 {
+  border-left: 6px solid var(--navy);
+  padding-left: 12px;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+/* 料理写真 */
+.food-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.food-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-gallery figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* メニューPDF */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.menu-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.menu-item a {
+  color: var(--green);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* リンク */
+a {
+  color: var(--green);
+}
+
+/* 地図 */
+iframe {
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* フッター */
+.footer {
+  background-color: var(--navy);
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .shop-name {
+    font-size: 42px;
+  }
+
+  .catchcopy {
+    font-size: 16px;
+  }
+
+  .food-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Wolt デリバリー案内 ===== */
+.wolt-section {
+ max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 16px;
+  background-color: var(--offwhite);
+}
+
+.section.alt {
+  background-color: var(--greige);
+}
+
+h2 {
+  border-left: 6px solid var(--navy);
+  padding-left: 12px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  }
+
+.wolt-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #1f5f3a; /* 深緑 */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+text-align: center;
+}
+
+.wolt-button:hover {
+  opacity: 0.85;
+}
