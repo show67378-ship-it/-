@@ -33,6 +33,7 @@ body {
   font-family: "Yomogi", cursive;
   font-size: 64px;
   color: #fff;
+  white-space: nowrap;
   letter-spacing: 0.1em;
 }
 
@@ -190,3 +191,4 @@ text-align: center;
 .wolt-button:hover {
   opacity: 0.85;
 }
+
