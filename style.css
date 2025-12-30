@@ -191,4 +191,10 @@ text-align: center;
 .wolt-button:hover {
   opacity: 0.85;
 }
+@media (max-width: 480px) {
+  .shop-name {
+    font-size: 2.6rem;
+  }
+}
+
 
